@@ -1,7 +1,8 @@
 # Analytical Kinematic Analysis of Planar 4-Bar Linkage
 
-This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage, given below 
-[fourbar_kinzelbook.png](./fourbar_kinzelbook.png)
+This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage, given below
+
+![Four-bar linkage diagram](./fourbar_kinzelbook.png)
 
 Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ and the output angle $\theta_4$ and the coordinates of the coupler point E.
 

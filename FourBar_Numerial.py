@@ -50,9 +50,23 @@ for i, th2 in enumerate(th2list):
     pB = OB + r4 * np.array([np.cos(th4), np.sin(th4)])
     pE = pA + r6 * np.array([np.cos(th3 + beta), np.sin(th3 + beta)])
 
+
     pAlist[i] = pA
-    pBlist[i] = pB 
+    pBlist[i] = pB
     pElist[i] = pE
+
+    # Animate linkage and plot trajectory of E
+    linkage = np.vstack([[0,0], pA, pE, pB, pA, pB, [r1,0]])
+
+    plt.clf()
+    plt.plot(linkage[:,0], linkage[:,1], marker='o', label='Linkage')
+    plt.plot(pElist[:i+1,0], pElist[:i+1,1], 'r--', label='Coupler E Trajectory')
+    plt.axis('equal')
+    plt.xlim(-5, 5)
+    plt.ylim(-5, 5)
+    plt.title(f'4-Bar Linkage Animation (Step {i+1})')
+    plt.legend()
+    plt.pause(0.01)
 
 plt.figure()
 plt.plot(th2list, th3list, label='Coupler Angle th3')

@@ -9,10 +9,11 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
 ## Solution Process
 
 1. **Linkage Definition**: The four-bar mechanism is defined by its link lengths and input crank angle.
-2. **Position Analysis**: For each input crank angle, the output and coupler angles are calculated analytically using trigonometric relationships.
-3. **Coupler Point Calculation**: The position of the coupler point is determined for each configuration.
-4. **Visualization**: The linkage is plotted for each step, showing the movement and configuration of the mechanism.
-5. **Angle Plots**: The coupler and output angles are plotted against the input crank angle to visualize the kinematic behavior.
+2. **Analytical solution**: This follows the elimination method detailed in the lecture notes. This method returns both solutions for the linkage configuration.
+3. **Numerical solution**: This is about solving the kinematics equations by equation solver using Newton's iteration method. This method returns one solution for a given initial guess to the solution.
+4. **Coupler Point Calculation**: The position of the coupler point is determined for each configuration.
+5. **Visualization**: The linkage is plotted for each step, showing the movement and configuration of the mechanism.
+6. **Angle Plots**: The coupler and output angles are plotted against the input crank angle to visualize the kinematic behavior.
 
 ## How to Run
 
@@ -20,9 +21,15 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
    - `numpy`
    - `matplotlib`
 
-2. Run the script:
+
+2. Run the analytical solution script ([FourBar_Analytical.py](./FourBar_Analytical.py)):
    ```bash
-   python FourBar_PositionAnalysis.py
+   python FourBar_Analytical.py
+   ```
+
+3. Run the numerical Newton solver script ([FourBar_Numerial.py](./FourBar_Numerial.py)):
+   ```bash
+   python FourBar_Numerial.py
    ```
 
 ## References
@@ -33,4 +40,4 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
 
 ---
 
-Feel free to modify the link lengths and parameters in the script to analyze different 4-bar mechanisms.
+Feel free to modify the link lengths and parameters in the scripts to analyze different 4-bar mechanisms.

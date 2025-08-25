@@ -47,9 +47,12 @@ for i in range(len(th2)):
 
     linkage = np.vstack([posOA, posA[i], posE[i], posB[i], posA[i], posB[i], posOB])
     plt.clf()
-    plt.plot(linkage[:, 0], linkage[:, 1], marker='o')
+    plt.plot(linkage[:, 0], linkage[:, 1], marker='o', label='Linkage')
+    # Plot trajectory of coupler point E up to current step
+    plt.plot(posE[:i+1, 0], posE[:i+1, 1], 'r--', label='Coupler E Trajectory')
     plt.axis([-5, 5, -5, 5])
     plt.title(f'4-Bar Linkage Position (Step {i+1})')
+    plt.legend()
     plt.pause(0.1)
 
 plt.figure()

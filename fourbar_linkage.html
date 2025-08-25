@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive 4-Bar Linkage Kinematics</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #container { display: flex; gap: 40px; }
+        #canvas-panel { border: 1px solid #888; background: #f9f9f9; }
+        #controls { margin-bottom: 20px; }
+        #plot-panel { width: 400px; height: 400px; }
+    </style>
+</head>
+<body>
+    <h2>Interactive 4-Bar Linkage Kinematics</h2>
+    <div id="controls">
+        <label>r1: <input type="number" id="r1" value="100" step="0.1"></label>
+        <label>r2: <input type="number" id="r2" value="200" step="0.1"></label>
+        <label>r3: <input type="number" id="r3" value="350" step="0.1"></label>
+        <label>r4: <input type="number" id="r4" value="400" step="0.1"></label>
+        <label>Coupler Angle β: <input type="number" id="beta" value="0.4636" step="0.01"></label>
+        <label>Input θ2 (deg): <input type="number" id="th2" value="0" step="1"></label>
+        <button onclick="animateLinkage()">Animate Linkage</button>
+    </div>
+    <div id="container">
+        <canvas id="canvas-panel" width="400" height="400"></canvas>
+        <div id="plot-panel">
+            <canvas id="plot-canvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <script src="./fourbar_linkage.js"></script>
+</body>
+</html>

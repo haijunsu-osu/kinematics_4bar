@@ -1,6 +1,9 @@
 # Analytical Kinematic Analysis of Planar 4-Bar Linkage
 
-This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage
+This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage, given below 
+[fourbar_kinzelbook.png](./fourbar_kinzelbook.png)
+
+Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ and the output angle $\theta_4$ and the coordinates of the coupler point E.
 
 ## Solution Process
 
@@ -24,7 +27,6 @@ This repository contains a Python implementation of the analytical kinematic ana
 ## References
 - [Analytical Position Velocity Acceleration Analysis of planar linkages (Kinzel book).pdf](./Analytical%20Position%20Velocity%20Acceleration%20Analysis%20of%20planar%20linkages%20(Kinzel%20book).pdf)
 - [Lecture 2 Analytical Positional Analysis.pdf](./Lecture%202%20Analytical%20Positional%20Analysis.pdf)
-- [fourbar_kinzelbook.png](./fourbar_kinzelbook.png)
 - Lecture notes on positional analysis of planar linkages
 - Waldron, K.J., Kinzel, G.L., Agrawal, S.K., "Kinematics, Dynamics, and Design of Machinery, Third Edition", John Wiley & Sons, 2016. [Amazon link](https://www.amazon.com/Kinematics-Dynamics-Machinery-Kenneth-Waldron/dp/1118933281)
 

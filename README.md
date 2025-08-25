@@ -1,9 +1,6 @@
 # Analytical Kinematic Analysis of Planar 4-Bar Linkage
 
-This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage, converted from MATLAB code (`FourBar_PositionAnalysis.m`). The solution follows the methodology described in:
-
-- "Analytical Position Velocity Acceleration Analysis of planar linkages (Kinzel book)"
-- "Lecture 2 Analytical Positional Analysis.pdf"
+This repository contains a Python implementation of the analytical kinematic analysis for a planar 4-bar linkage
 
 ## Solution Process
 
@@ -24,15 +21,10 @@ This repository contains a Python implementation of the analytical kinematic ana
    python FourBar_PositionAnalysis.py
    ```
 
-## Files
-- `FourBar_PositionAnalysis.py`: Main Python script for kinematic analysis and visualization.
-- `FourBar_PositionAnalysis.m`: Original MATLAB code.
-- `Analytical Position Velocity Acceleration Analysis of planar linkages (Kinzel book).pdf`: Reference material.
-- `Lecture 2 Analytical Positional Analysis.pdf`: Lecture notes.
-
 ## References
 - [Analytical Position Velocity Acceleration Analysis of planar linkages (Kinzel book).pdf](./Analytical%20Position%20Velocity%20Acceleration%20Analysis%20of%20planar%20linkages%20(Kinzel%20book).pdf)
 - [Lecture 2 Analytical Positional Analysis.pdf](./Lecture%202%20Analytical%20Positional%20Analysis.pdf)
+- [fourbar_kinzelbook.png](./fourbar_kinzelbook.png)
 - Lecture notes on positional analysis of planar linkages
 - Waldron, K.J., Kinzel, G.L., Agrawal, S.K., "Kinematics, Dynamics, and Design of Machinery, Third Edition", John Wiley & Sons, 2016. [Amazon link](https://www.amazon.com/Kinematics-Dynamics-Machinery-Kenneth-Waldron/dp/1118933281)
 

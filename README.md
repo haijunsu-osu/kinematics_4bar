@@ -33,6 +33,7 @@ This repository contains a Python implementation of the analytical kinematic ana
 ## References
 - Kinzel, G.L., "Analytical Position Velocity Acceleration Analysis of planar linkages"
 - Lecture notes on positional analysis of planar linkages
+- Waldron, K.J., Kinzel, G.L., Agrawal, S.K., "Kinematics, Dynamics, and Design of Machinery, Third Edition", John Wiley & Sons, 2016. [Amazon link](https://www.amazon.com/Kinematics-Dynamics-Machinery-Kenneth-Waldron/dp/1118933281)
 
 ---
 

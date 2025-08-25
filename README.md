@@ -6,6 +6,10 @@ This repository contains a Python implementation of the analytical kinematic ana
 
 Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ and the output angle $\theta_4$ and the coordinates of the coupler point E.
 
+## Jupyter Notebook
+- [Open in Google Colab](https://colab.research.google.com/github/haijunsu-osu/kinematics_4bar/blob/main/FourBar_Kinematics_Colab.ipynb): Colab-ready notebook demonstrating both analytical and numerical methods for the planar 4-bar linkage.
+
+
 ## Solution Process
 
 1. **Linkage Definition**: The four-bar mechanism is defined by its link lengths and input crank angle.
@@ -27,8 +31,7 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
    python FourBar_Numerial.py
    ```
 
-## Jupyter Notebook
-- [FourBar_Kinematics_Colab.ipynb](./FourBar_Kinematics_Colab.ipynb): Colab-ready notebook demonstrating both analytical and numerical methods for the planar 4-bar linkage.
+
 
 ## References
 - [Analytical Position Velocity Acceleration Analysis of planar linkages (Kinzel book).pdf](./Analytical%20Position%20Velocity%20Acceleration%20Analysis%20of%20planar%20linkages%20(Kinzel%20book).pdf)

@@ -71,8 +71,8 @@
                 <label>Coupler (b): <input type="number" id="input_b" value="100" min="10" max="400"></label>
                 <label>Output (c): <input type="number" id="input_c" value="120" min="10" max="400"></label>
                 <label>Ground (d): <input type="number" id="input_d" value="130" min="10" max="400"></label>
-                <label>Coupler Point e: <input type="number" id="input_e" value="60" min="0" max="200"></label>
-                <label>α (deg): <input type="number" id="input_alpha" value="30" min="-180" max="180"></label>
+                <label>Coupler Point e: <input type="number" id="input_e" value="100" min="0" max="200"></label>
+                <label>α (deg): <input type="number" id="input_alpha" value="60" min="-180" max="180"></label>
             </div>
             <div id="canvas-container">
                 <canvas id="linkage-canvas" width="600" height="600"></canvas>
@@ -82,6 +82,9 @@
                 <button id="pause-btn">Pause</button>
                 <input type="range" id="angle-slider" min="0" max="360" value="0" style="width:300px;">
                 <span id="angle-value">0°</span>
+                <span style="margin-left:20px;">Configuration:</span>
+                <label><input type="radio" name="config" id="config_open" value="open" checked> Open</label>
+                <label><input type="radio" name="config" id="config_closed" value="closed"> Closed</label>
             </div>
         </div>
         <div id="side-panel">

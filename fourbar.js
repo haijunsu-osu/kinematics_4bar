@@ -228,6 +228,18 @@ window.addEventListener('load', function() {
         ctx.fill();
         ctx.font = '18px Arial';
         ctx.fillText('P', pP.x + 10, pP.y - 10);
+        // Draw coupler length label (e)
+        ctx.fillStyle = '#FF851B';
+        ctx.font = '16px Arial';
+        ctx.fillText(`e = ${e}`, (pB.x + pP.x)/2 + 10, (pB.y + pP.y)/2 - 10);
+        // Draw coupler angle label (alpha)
+        ctx.save();
+        ctx.translate(pB.x, pB.y);
+        ctx.rotate(thetaP - Math.PI/2); // rotate to align with BP
+        ctx.fillStyle = '#FF851B';
+        ctx.font = '16px Arial';
+        ctx.fillText(`α = ${alpha}°`, 25, -15);
+        ctx.restore();
         ctx.restore();
         ctx.restore();
     }

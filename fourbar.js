@@ -231,7 +231,7 @@ window.addEventListener('load', function() {
         // Draw coupler length label (e)
         ctx.fillStyle = '#FF851B';
         ctx.font = '16px Arial';
-        ctx.fillText(`e`, (pB.x + pP.x)/2 + 10, (pB.y + pP.y)/2 - 10);
+        ctx.fillText(`e`, (pB.x + pP.x)/2 + 10, (pB.y + pP.y)/2);
         // Draw coupler angle label (alpha)
         ctx.save();
         //ctx.translate(pB.x, pB.y);

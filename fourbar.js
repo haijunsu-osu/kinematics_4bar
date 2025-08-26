@@ -18,8 +18,8 @@ const angleSlider = document.getElementById('angle-slider');
 const angleValue = document.getElementById('angle-value');
 
 let a = parseFloat(inputA.value);
-let e = parseFloat(inputE ? inputE.value : 60);
-let alpha = parseFloat(inputAlpha ? inputAlpha.value : 30);
+let e = parseFloat(inputE ? inputE.value : 100);
+let alpha = parseFloat(inputAlpha ? inputAlpha.value : 60);
 let b = parseFloat(inputB.value);
 let c = parseFloat(inputC.value);
 let d = parseFloat(inputD.value);

@@ -11,7 +11,7 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
 
 ## Interactive 4-Bar Linkage Analysis
 
-For an interactive analysis of the 4-bar linkage, see [fourbar_linkage.html](./fourbar_GUI.html).
+For an interactive analysis of the 4-bar linkage, see [fourbar_linkage.html](https://haijunsu-osu.github.io/kinematics_4bar/fourbar_GUI.html).
 
 
 ## Solution Process

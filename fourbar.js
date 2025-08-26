@@ -238,7 +238,7 @@ window.addEventListener('load', function() {
         //ctx.rotate(thetaP - Math.PI/2); // rotate to align with BP
         ctx.fillStyle = '#FF851B';
         ctx.font = '16px Arial';
-        ctx.fillText(`α`, ((pB.x + pP.x)/2 + (pB.x + pC.x)/2)/2, ((pB.y + pP.y)/2 + (pB.y + pC.y)/2)/2);
+        //ctx.fillText(`α`, ((pB.x + pP.x)/2 + (pB.x + pC.x)/2)/2, ((pB.y + pP.y)/2 + (pB.y + pC.y)/2)/2);
         ctx.restore();
         ctx.restore();
         ctx.restore();

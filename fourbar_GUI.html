@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planar 4-Bar Linkage Interactive Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        #container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        #main {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background: #fff;
+            padding: 20px;
+        }
+        #controls {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        #controls input {
+            width: 60px;
+        }
+        #canvas-container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            background: #e9e9e9;
+            border: 1px solid #ccc;
+        }
+        #animation-bar {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #side-panel {
+            flex: 1;
+            background: #f9f9f9;
+            border-left: 1px solid #ccc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #plot {
+            width: 350px;
+            height: 350px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <div id="controls">
+                <label>Input (a): <input type="number" id="input_a" value="60" min="10" max="400"></label>
+                <label>Coupler (b): <input type="number" id="input_b" value="100" min="10" max="400"></label>
+                <label>Output (c): <input type="number" id="input_c" value="120" min="10" max="400"></label>
+                <label>Ground (d): <input type="number" id="input_d" value="130" min="10" max="400"></label>
+                <label>Coupler Point e: <input type="number" id="input_e" value="60" min="0" max="200"></label>
+                <label>α (deg): <input type="number" id="input_alpha" value="30" min="-180" max="180"></label>
+            </div>
+            <div id="canvas-container">
+                <canvas id="linkage-canvas" width="600" height="600"></canvas>
+            </div>
+            <div id="animation-bar">
+                <button id="play-btn">Play</button>
+                <button id="pause-btn">Pause</button>
+                <input type="range" id="angle-slider" min="0" max="360" value="0" style="width:300px;">
+                <span id="angle-value">0°</span>
+            </div>
+        </div>
+        <div id="side-panel">
+            <h3>Angle Plots</h3>
+            <canvas id="plot" width="350" height="350"></canvas>
+        </div>
+    </div>
+    <script src="fourbar.js"></script>
+</body>
+</html>

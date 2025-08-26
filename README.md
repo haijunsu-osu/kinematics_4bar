@@ -9,6 +9,10 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
 ## Jupyter Notebook
 - [Open in Google Colab](https://colab.research.google.com/github/haijunsu-osu/kinematics_4bar/blob/main/FourBar_Kinematics_Colab.ipynb): Colab-ready notebook demonstrating both analytical and numerical methods for the planar 4-bar linkage.
 
+## Interactive 4-Bar Linkage Analysis
+
+For an interactive analysis of the 4-bar linkage, see [fourbar_linkage.html](./fourbar_GUI.html).
+
 
 ## Solution Process
 
@@ -30,7 +34,6 @@ Goal: given the driver angle $\theta_2$, calculate the coupler angle $\theta_3$ 
    ```bash
    python FourBar_Numerial.py
    ```
-
 
 
 ## References

@@ -234,11 +234,13 @@ window.addEventListener('load', function() {
         ctx.fillText(`e`, (pB.x + pP.x)/2 + 10, (pB.y + pP.y)/2);
         // Draw coupler angle label (alpha)
         ctx.save();
-        //ctx.translate(pB.x, pB.y);
-        //ctx.rotate(thetaP - Math.PI/2); // rotate to align with BP
         ctx.fillStyle = '#FF851B';
         ctx.font = '16px Arial';
-        //ctx.fillText(`α`, ((pB.x + pP.x)/2 + (pB.x + pC.x)/2)/2, ((pB.y + pP.y)/2 + (pB.y + pC.y)/2)/2);
+        // Midpoint between BC and BP
+        const midBC = { x: (pB.x + pC.x)/2, y: (pB.y + pC.y)/2 };
+        const midBP = { x: (pB.x + pP.x)/2, y: (pB.y + pP.y)/2 };
+        const midAlpha = { x: (midBC.x + midBP.x)/2, y: (midBC.y + midBP.y)/2 };
+        ctx.fillText('α', midAlpha.x, midAlpha.y);
         ctx.restore();
         ctx.restore();
         ctx.restore();
